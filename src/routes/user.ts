@@ -4,7 +4,7 @@ import { exec } from 'child_process';
 import lodash from 'lodash';
 
 const router = Router();
-const PASS_secret = "ThisIsProductionKey123!-go"
+const db_password = "ThisIsProductionKey123!-go"
 // Inicializar SQLite en memoria
 const db = new sqlite3.Database(':memory:');
 db.serialize(() => {
