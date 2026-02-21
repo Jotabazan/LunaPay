@@ -36,7 +36,7 @@ jobs:
         uses: returntocorp/semgrep-action@v1
         with:
           # Utilizamos reglas libres (open source / p/default u otras) para buscar vulnerabilidades en TS/JS
-          config: "p/javascript"
+          config: "p/nodejs p/expressjs p/typescript"
         # Esto hará que falle la ejecución si se encuentran inyecciones (SQL, Command Injection, etc.)
 
   sca_npm_audit:
